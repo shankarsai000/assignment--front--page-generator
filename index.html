@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by N.shankar sai</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment Front Page Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Assignment Front Page Generator</h2>
+    <input type="text" id="studentName" placeholder="Enter Student Name" />
+    <input type="text" id="usn" placeholder="Enter USN" />
+    <input type="text" id="section" placeholder="Enter Section" />
+    <input type="number" id="assignmentNo" placeholder="Enter Assignment Number" />
+
+    <select id="topicType">
+      <option value="Case study">Case study</option>
+      <option value="Topic">Topic</option>
+    </select>
+
+    <textarea id="topic" placeholder="Enter Topic/Case Study"></textarea>
+
+    <select id="subject">
+      <option value="Fundamentals of Computer Networks (UE24CS1205)">Fundamentals of Computer Networks (UE24CS1205)</option>
+      <option value="Data Structures & Algorithms (UE24CS1203)">Data Structures & Algorithms (UE24CS1203)</option>
+      <option value="Python Programming (UE24CS1204)">Python Programming (UE24CS1204)</option>
+      <option value="Applied Physics for CSE (UE24SC1102)">Applied Physics for CSE (UE24SC1102)</option>
+      <option value="Applied Mathematics (UE24CS1201)">Applied Mathematics (UE24CS1201)</option>
+      <option value="Fundamentals of DBMS (UE24CS1206)">Fundamentals of DBMS (UE24CS1206)</option>
+    </select>
+
+    <input type="text" id="teacherName" placeholder="Enter Teacher's Name" />
+
+    <button onclick="generateFrontPage()">Generate Front Page</button>
+    <button onclick="downloadPdf()" id="downloadButton" style="display:none;">Download as PDF</button>
+
+    <div class="designer-note"><Strong>Designed by Shankar Sai N</div>
+  </div>
+
+  <div id="frontPage" class="a4-page" style="display:none;"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.1/jspdf.umd.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
